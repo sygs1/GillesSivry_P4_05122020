@@ -53,7 +53,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 20px;
 }
 
 .bg-center,
@@ -81,6 +81,7 @@ a:hover {
 }
 
 .bloc-bg-texture::before {
+   
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -93,6 +94,8 @@ a:hover {
 .texture-paper::before {
     background: url("img/v2/texture-paper-mini.png");
     background-size: 280px 280px;
+  
+    
 }
 
 .b-parallax {
@@ -289,10 +292,15 @@ a:hover {
 
 .navbar {
     margin-bottom: 0;
-    z-index: 1;
+    z-index: 1;   
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: center;
 }
+   
 
-.navbar-brand {
+.navbar-brand {  
     height: auto;
     padding: 3px 15px;
     font-size: 25px;
@@ -302,7 +310,8 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    height: 40px;
+    width:auto;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -327,11 +336,13 @@ a:hover {
     float: left;
     margin: 4px 50px;
     font-size: 16px;
-    
+   
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
+    
+   
 }
 
 .nav > li a:hover,
@@ -339,7 +350,7 @@ a:hover {
     background: transparent;
 }
 
-.navbar-toggle {
+.navbar-toggle {    
     margin: 10px 10px 0 0;
     border: 0px;
 }
@@ -365,7 +376,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
+/**GS**/
     .citation{ 
         font-size:x-large;   
         font-style: italic;
@@ -375,8 +386,16 @@ a:hover {
             font-style: normal;
             font-size:20px;
         }
+    #form_1{
+        line-height: 2.5em;
+        }
+        .navbar-toggle {
+            display:none;
+        }
+    /**/
 
     .site-navigation {
+        text-decoration: none;
         list-style-type:none;
         position: absolute;
         top: 50%;
@@ -407,6 +426,7 @@ a:hover {
         display: inline-block;
     }
     .nav-center .site-navigation {
+        text-decoration: none;
         position: relative;
         width: 100%;
         right: 0;
@@ -791,7 +811,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
@@ -864,13 +884,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -888,10 +908,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+  
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -900,8 +917,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+       
     }
 }
 
@@ -936,6 +952,7 @@ h4 {
     footer article{
     margin-left: 20px;    
     }
+    
 /****/
 
 
@@ -960,6 +977,7 @@ h4 {
         -ms-transform: none;
     }
     .nav > li {
+        text-decoration: none;
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
@@ -992,6 +1010,7 @@ h4 {
         right: -1px;
     }
     .navbar-collapse {
+        text-decoration:none;
         padding: 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
@@ -999,12 +1018,12 @@ h4 {
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width:auto;
+    
     }
     .nav-invert .navbar-header {
         float: none;
-        width: 100%;
-
+        width:auto;        
     }
     .nav-invert .navbar-toggle {
         float: left;
@@ -1013,6 +1032,9 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+        line-height: 2.5em;
+      
+        
     }
     .bloc-xxl,
     .bloc-xl,
