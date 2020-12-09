@@ -103,11 +103,11 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .icon-round,
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc .a-btn,
@@ -136,7 +136,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc .a-btn:hover,
@@ -443,6 +443,7 @@ a:hover {
     background: none!important;
     display: block;
     padding: 14px 15px;
+    border: 1px solid #364577;
 }
 
 nav .caret {
@@ -684,12 +685,23 @@ h6,
 p,
 label,
 .btn,
-a {
+{
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
-
+/***GS*/
+a{
+    color:white;
+}
+article ul{
+    list-style-type: square;
+    line-height: 1.5em;
+}
+footer{
+    line-height:1.5em;
+}
+/***/
 .container {
     max-width: 1000px;
 }
@@ -807,7 +819,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color:  #364577;
 }
 
 .tc-white {
@@ -815,7 +827,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: black;
     color: #FFFFFF!important;
 }
 
@@ -950,7 +962,8 @@ h4 {
         width:100%;        
     }
     footer article{
-    margin-left: 20px;    
+    margin-left: 20px;
+
     }
     
 /****/
@@ -1000,7 +1013,7 @@ h4 {
         background: rgba(0, 0, 0, .8);
     }
     #hero-bloc .navbar .nav a {
-        color: rgba(255, 255, 255, .6);
+        color: rgba(255, 255, 255, 1);
     }
     .hero {
         padding: 50px 0;
