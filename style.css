@@ -16,6 +16,7 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    color: #c27956;
 }
 
 #page-loading-blocs-notifaction {
@@ -153,7 +154,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color:#c27956;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -252,7 +253,7 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: #c27956;
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -348,6 +349,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+  
 }
 
 .navbar-toggle {    
@@ -560,11 +562,15 @@ button {
 
 .scrollToTop span {
     margin-top: 6px;
+    color: black;
+    background-color: white;
+    
 }
 
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
+    
 }
 
 a[data-lightbox] {
@@ -753,7 +759,9 @@ p {
     width: 90%;
     margin: auto auto 2em auto;
     padding:1.2em 1.2em;
-}
+    }
+
+
 
 h2 {
     font-size: 22px;
